@@ -870,9 +870,9 @@ h2 small {
   border-bottom: 15px solid #3c5b79;
   bottom: 0;
   height: 98px;
-  left: -50px;
+  left: calc(100% * -1);
   position: absolute;
-  width: calc(100% + 100px);
+  width: calc(100% * 3);
 }
 
 .cta_button_area {
