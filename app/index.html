@@ -36,15 +36,19 @@
     <meta itemprop="description" content="Uma experiência única combinando Tecnologia e o clima tropical de Maceió">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,100' rel='stylesheet' type='text/css'>
+
+    <link href="css/rapid-icons.css" rel="stylesheet" media="screen">
+
+    <!-- build:css css/main.css -->
     <link href="css/grid12.css" rel="stylesheet" media="screen">
     <link href="css/james_typography.css" rel="stylesheet" media="screen">
     <link href="css/main.css" rel="stylesheet" media="screen">
-    <link href="css/rapid-icons.css" rel="stylesheet" media="screen">
     <link href="css/animate.css" rel="stylesheet" media="screen">
     <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
     <link href="css/owl.theme.css" rel="stylesheet" media="screen">
     <link href="css/owl.transitions.css" rel="stylesheet" media="screen">
-    <script src="js/modernizr.custom.js"></script>
+    <!-- endbuild -->
+
 </head>
 
 <body>
@@ -68,23 +72,7 @@
                         <div class="cta_button_area">
                             <div>
                                 <a class="typeform-share link btn waves-effect waves-light subscribe-submit" href="https://caravanaweb.typeform.com/to/xYNEuI" data-mode="2" target="_blank">Participe dessa experiência</a>
-                                <script>
-                                    (function() {
-                                        var qs, js, q, s, d = document,
-                                            gi = d.getElementById,
-                                            ce = d.createElement,
-                                            gt = d.getElementsByTagName,
-                                            id = 'typef_orm',
-                                            b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-                                        if (!gi.call(d, id)) {
-                                            js = ce.call(d, 'script');
-                                            js.id = id;
-                                            js.src = b + 'share.js';
-                                            q = gt.call(d, 'script')[0];
-                                            q.parentNode.insertBefore(js, q)
-                                        }
-                                    })()
-                                </script>
+
                             </div>
                         </div>
                         <div class="home_mockups">
@@ -326,25 +314,54 @@
     </div>
 
     <!-- JavaScript plugins comes here -->
+
+    <!-- build:js js/main.js -->
+    <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.cycle.all.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/pathLoader.js"></script>
     <script src="js/preloader.js"></script>
-    <script src="js/waypoints.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/main.js"></script>
+    <!-- endbuild -->
 
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function() {
+            var qs, js, q, s, d = document,
+                gi = d.getElementById,
+                ce = d.createElement,
+                gt = d.getElementsByTagName,
+                id = 'typef_orm',
+                b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+            if (!gi.call(d, id)) {
+                js = ce.call(d, 'script');
+                js.id = id;
+                js.src = b + 'share.js';
+                q = gt.call(d, 'script')[0];
+                q.parentNode.insertBefore(js, q)
+            }
+        })()
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-79724971-1', 'auto');
         ga('send', 'pageview');
     </script>
+
 </body>
 
 </html>
