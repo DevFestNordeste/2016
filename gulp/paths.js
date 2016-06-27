@@ -3,8 +3,7 @@ export var paths = {
 
   source: {
     js   : './app/js/*.js',
-    sass : 'app/css/**/*.css',
-    fonts: './app/fonts/**/*',
+    css : 'app/css/**/*.css',
     img  : './app/images/**/**/*.{jpg,png,gif,svg}'
   },
 

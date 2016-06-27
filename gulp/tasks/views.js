@@ -17,7 +17,9 @@ gulp.task('html', ['styles'], () => {
   return gulp.src(['app/*.html', '.tmp/*.html', '!app/googleec2bef8a4c676860.html'])
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.autoprefixer()))
+    .pipe($.if('*.css', $.autoprefixer({
+      browsers: ['last 2 version']
+    })))
     .pipe($.if('*.css', purify([paths.source.js, 'app/index.html'])))
     .pipe($.if('*.css', $.minifyCss()))
     .pipe($.if('*.js', $.rev()))

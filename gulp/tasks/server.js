@@ -12,9 +12,6 @@ gulp.task('serve', ['styles','images'], () => {
 		port: 9000,
 		server: {
 			baseDir: ['.tmp', 'app'],
-			routes: {
-				'/bower_components': 'bower_components'
-			}
 		}
 	});
 
@@ -25,8 +22,7 @@ gulp.task('serve', ['styles','images'], () => {
 		'app/images/**/*',
 		'.tmp/fonts/**/*'
 	]).on('change', reload);
-	gulp.watch(paths.source.sass, ['styles']);
-	gulp.watch(paths.source.fonts, ['fonts']);
+	gulp.watch(paths.source.css, ['styles']);
 });
 
 gulp.task('serve:dist', () => {
