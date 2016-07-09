@@ -14,7 +14,7 @@ gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 // Copy and paste taks
 
 
-gulp.task('copy', ['copy-font', 'copy-cssIcons', 'copy-googleCode', 'copy-favico']);
+gulp.task('copy', ['copy-font', 'copy-cssIcons', 'copy-googleCode', 'copy-favico', 'copy-cname']);
 
 gulp.task('copy-font', () => {
   return gulp.src('app/css/fonts/**/*')
@@ -33,5 +33,10 @@ gulp.task('copy-googleCode', () => {
 
 gulp.task('copy-favico', () => {
   return gulp.src('app/favicon.ico')
+    .pipe(gulp.dest('dist'))
+})
+
+gulp.task('copy-cname', () => {
+  return gulp.src('app/CNAME')
     .pipe(gulp.dest('dist'))
 })

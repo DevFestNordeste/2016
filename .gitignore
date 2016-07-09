@@ -11,6 +11,7 @@ log.txt
 *.sublime-workspace
 
 .idea/
+.publish/
 .sass-cache/
 .versions/
 coverage/
