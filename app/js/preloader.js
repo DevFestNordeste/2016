@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
@@ -65,8 +65,8 @@
 							classie.add( document.body, 'layout-switch' );
 							window.removeEventListener( 'scroll', noscroll );
 							setTimeout( function() { classie.add( header, 'header-none' );}, 2000);
-							
-							
+
+
 						};
 
 						if( support.animations ) {
@@ -81,7 +81,7 @@
 
 		loader.setProgressFn( simulationFn );
 	}
-	
+
 	function noscroll() {
 		window.scrollTo( 0, 0 );
 	}
