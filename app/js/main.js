@@ -20,6 +20,10 @@
         setTimeout(function() { $('.content_anim7').addClass('animated fadeInUp') }, 600);
       }, { offset: '50%' });
 
+      $('#bytes').waypoint(function() {
+        setTimeout(function() { $('.content_animation_medium').addClass('animated fadeInUp') }, 0);
+      }, { offset: '50%' });
+
       $('#sponsorship').waypoint(function() {
         setTimeout(function() { $('.content_anim8').addClass('animated fadeInUp') }, 0);
         setTimeout(function() { $('.content_anim9').addClass('animated fadeInUp') }, 200);
