@@ -16,6 +16,7 @@ gulp.task('html', ['styles'], () => {
 
   return gulp.src(['app/*.html', '.tmp/*.html', '!app/googleec2bef8a4c676860.html'])
     .pipe(assets)
+    .pipe($.if('*.js', $.sourcemaps.init()))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.autoprefixer({
       browsers: ['last 2 version']
@@ -29,6 +30,7 @@ gulp.task('html', ['styles'], () => {
       conditionals: true,
       loose: false
     })))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest('dist'))
     .pipe($.size({
       title: 'build',
