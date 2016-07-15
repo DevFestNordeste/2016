@@ -47,4 +47,7 @@ $ gulp
 # Para fazer deploy do dist execute o comando
 $ gulp-deploy
 
+# para customizar a mensagem de deploy utilize a flag --m
+$ gulp-deploy --m "SUA MENSAGEM"
+
 ```
