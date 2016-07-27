@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevFest Nordeste 2016</title>
+  <style>
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Senha">
+
+    <button id="btnLogin" class="btn btn-action">Log in</button>
+    <button id="btnSignUp" class="btn btn-secondary">Cadastrar</button>
+    <button id="btnLogout" class="btn btn-action hide">Sair</button>
+  
+    <br>
+    <button id="btnGoogleSignin" class="btn btn-action">Autenticar com Google</button>
+    <button id="btnTwitterSignin" class="btn btn-action">Autenticar com Twitter</button>
+    <button id="btnGithubSignin" class="btn btn-action">Autenticar com Github</button>
+    <button id="btnFacebookSignin" class="btn btn-action">Autenticar com Facebook</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
