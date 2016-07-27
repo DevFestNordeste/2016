@@ -1,0 +1,21 @@
+doctype html
+html(lang='pt-br')
+  
+  head
+    include ../includes/_styles.jade
+    
+  body.page-header-fixed.page-sidebar-closed-hide-logo.page-content-white
+    .page-wrapper
+      .page-header.navbar.navbar-fixed-top
+        // BEGIN HEADER INNER
+        include ../includes/_header.jade
+      .clearfix
+      .page-container
+        // BEGIN SIDEBAR
+        include ../includes/_sidebar.jade
+        //- PAGE CONTENT
+        .page-content-wrapper
+          .page-content
+            block content
+            
+    include ../includes/_scripts.jade
