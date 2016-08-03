@@ -4,8 +4,21 @@
       li.sidebar-toggler-wrapper.hide
         .sidebar-toggler
       //- Home Link
-      li.nav-item.start.active.open
+      li.nav-item.start
         a.nav-link.nav-toggle(href='javascript:;')
           i.icon-home
           span.title Inicio
           span.selected
+          
+      li.nav-item.active.open
+        a.nav-link.nav-toggle(href='javascript:;')
+          i.icon-basket
+          span.title eCommerce
+          span.selected
+          span.arrow.open
+        ul.sub-menu
+          li.nav-item.active.open
+            a.nav-link(href='orders.html')
+              i.icon-basket
+              span.title  Orders
+              span.selected

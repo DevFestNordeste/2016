@@ -1,0 +1,111 @@
+extends layouts/default
+
+block content
+  h1.page-title
+    | blank orders page
+  .row
+  .col-md-12
+    .note.note-info
+      p
+        | NOTE: The below datatable is not connected to a real database so the filter and sorting is just simulated for demo purposes only.
+    // Begin: life time stats
+    .portlet.light.portlet-fit.portlet-datatable.bordered
+      .portlet-title
+        .caption
+          i.icon-settings.font-green
+          span.caption-subject.font-green.sbold.uppercase  Order Listing 
+        .actions
+          .btn-group.btn-group-devided(data-toggle='buttons')
+            label.btn.btn-transparent.green.btn-outline.btn-outline.btn-circle.btn-sm.active
+              input#option1.toggle(type='radio', name='options')
+              | Actions
+            label.btn.btn-transparent.blue.btn-outline.btn-circle.btn-sm
+              input#option2.toggle(type='radio', name='options')
+              | Settings
+          .btn-group
+            a.btn.red.btn-outline.btn-circle(href='javascript:;', data-toggle='dropdown')
+              i.fa.fa-share
+              span.hidden-xs  Tools 
+              i.fa.fa-angle-down
+            ul.dropdown-menu.pull-right
+              li
+                a(href='javascript:;')  Export to Excel 
+              li
+                a(href='javascript:;')  Export to CSV 
+              li
+                a(href='javascript:;')  Export to XML 
+              li.divider  
+              li
+                a(href='javascript:;')  Print Invoices 
+      .portlet-body
+        .table-container
+          .table-actions-wrapper
+            span  
+            select.table-group-action-input.form-control.input-inline.input-small.input-sm
+              option(value='') Select...
+              option(value='Cancel') Cancel
+              option(value='Cancel') Hold
+              option(value='Cancel') On Hold
+              option(value='Close') Close
+            button.btn.btn-sm.btn-default.table-group-action-submit
+              i.fa.fa-check
+              |  Submit
+          table#datatable_orders.table.table-striped.table-bordered.table-hover.table-checkable
+            thead
+              tr.heading(role='row')
+                th(width='2%')
+                  label.mt-checkbox.mt-checkbox-single.mt-checkbox-outline
+                    input.group-checkable(type='checkbox', data-set='#sample_2 .checkboxes')
+                    span
+                th(width='5%')  Order # 
+                th(width='15%')  Purchased On 
+                th(width='15%')  Customer 
+                th(width='10%')  Ship To 
+                th(width='10%')  Base Price 
+                th(width='10%')  Purchased Price 
+                th(width='10%')  Status 
+                th(width='10%')  Actions 
+              tr.filter(role='row')
+                td  
+                td
+                  input.form-control.form-filter.input-sm(type='text', name='order_id')
+                td
+                  .input-group.date.date-picker.margin-bottom-5(data-date-format='dd/mm/yyyy')
+                    input.form-control.form-filter.input-sm(type='text', readonly='', name='order_date_from', placeholder='From')
+                    span.input-group-btn
+                      button.btn.btn-sm.default(type='button')
+                        i.fa.fa-calendar
+                  .input-group.date.date-picker(data-date-format='dd/mm/yyyy')
+                    input.form-control.form-filter.input-sm(type='text', readonly='', name='order_date_to', placeholder='To')
+                    span.input-group-btn
+                      button.btn.btn-sm.default(type='button')
+                        i.fa.fa-calendar
+                td
+                  input.form-control.form-filter.input-sm(type='text', name='order_customer_name')
+                td
+                  input.form-control.form-filter.input-sm(type='text', name='order_ship_to')
+                td
+                  .margin-bottom-5
+                    input.form-control.form-filter.input-sm(type='text', name='order_base_price_from', placeholder='From')
+                  input.form-control.form-filter.input-sm(type='text', name='order_base_price_to', placeholder='To')
+                td
+                  .margin-bottom-5
+                    input.form-control.form-filter.input-sm.margin-bottom-5.clearfix(type='text', name='order_purchase_price_from', placeholder='From')
+                  input.form-control.form-filter.input-sm(type='text', name='order_purchase_price_to', placeholder='To')
+                td
+                  select.form-control.form-filter.input-sm(name='order_status')
+                    option(value='') Select...
+                    option(value='pending') Pending
+                    option(value='closed') Closed
+                    option(value='hold') On Hold
+                    option(value='fraud') Fraud
+                td
+                  .margin-bottom-5
+                    button.btn.btn-sm.btn-success.filter-submit.margin-bottom
+                      i.fa.fa-search
+                      |  Search
+                  button.btn.btn-sm.btn-default.filter-cancel
+                    i.fa.fa-times
+                    |  Reset
+            tbody
+    // End: life time stats

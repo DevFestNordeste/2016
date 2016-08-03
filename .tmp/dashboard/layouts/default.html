@@ -12,10 +12,14 @@
     <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
     <link href="assets/styles/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/styles/datatables.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/styles/datatables.bootstrap.css" rel="stylesheet" type="text/css">
     <!-- BEGIN THEME LAYOUT STYLES-->
     <link href="assets/styles/layout.min.css" rel="stylesheet" type="text/css">
     <link id="style_color" href="assets/styles/darkblue.min.css" rel="stylesheet" type="text/css">
     <link href="assets/styles/custom.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/styles/components.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/styles/plugins.min.css" rel="stylesheet" type="text/css">
     <!-- END THEME LAYOUT STYLES-->
     <link rel="shortcut icon" href="favicon.ico">
   </head>
@@ -49,7 +53,12 @@
               <li class="sidebar-toggler-wrapper hide">
                 <div class="sidebar-toggler"></div>
               </li>
-              <li class="nav-item start active open"><a href="javascript:;" class="nav-link nav-toggle"><i class="icon-home"></i><span class="title">Inicio</span><span class="selected"></span></a></li>
+              <li class="nav-item start"><a href="javascript:;" class="nav-link nav-toggle"><i class="icon-home"></i><span class="title">Inicio</span><span class="selected"></span></a></li>
+              <li class="nav-item active open"><a href="javascript:;" class="nav-link nav-toggle"><i class="icon-basket"></i><span class="title">eCommerce</span><span class="selected"></span><span class="arrow open"></span></a>
+                <ul class="sub-menu">
+                  <li class="nav-item active open"><a href="orders.html" class="nav-link"><i class="icon-basket"></i><span class="title"> Orders</span><span class="selected"></span></a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -62,6 +71,8 @@
     <!-- BEGIN CORE PLUGINS-->
     <script src="assets/scripts/jquery.min.js" type="text/javascript"></script>
     <script src="assets/scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/datatables.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/datatables.bootstrap.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS-->
     <!-- BEGIN THEME GLOBAL SCRIPTS-->
     <script src="assets/scripts/app.min.js" type="text/javascript"></script>
