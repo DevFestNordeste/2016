@@ -889,6 +889,50 @@ h2 small {
   max-width: 40%;
 }
 
+.sponsorship {
+  border-bottom: 1px solid #F3F3F3;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+h3 + .sponsorship {
+  padding-top: 40px;
+}
+
+.sponsorship.confectioner img {
+  width: 225px;
+}
+
+.sponsorship.marshmallow img {
+  width: 200px;
+}
+
+.sponsorship.lollipop img {
+  width: 175px;
+}
+
+.sponsorship.kitkat img {
+  width: 150px;
+}
+
+.sponsorship.jelly-bean img {
+  width: 140px;
+}
+
+.sponsorship.ice-cream-sandwich img {
+  width: 135px;
+}
+
+.sponsorship.honeycomb img {
+  width: 130px;
+}
+
+.sponsorship.gingerbread img {
+  width: 100px;
+}
+
+
+
 
 /*------------------------------------------------------------------
 [Stylesheet]
