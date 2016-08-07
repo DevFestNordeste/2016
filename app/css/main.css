@@ -833,6 +833,7 @@ Custom
 .hero_fullscreen.background_solid {
   background: url(../images/venue.jpg) no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .logo {
