@@ -13,6 +13,12 @@
         setTimeout(function() { $('.content_anim3').addClass('animated fadeInUp') }, 400);
       }, { offset: '50%' });
 
+      $('#speakers').waypoint(function() {
+        setTimeout(function() { $('.animate-title').addClass('animated fadeInUp');}, 0);
+        setTimeout(function() { $('.animate-first-row').addClass('animated fadeInUp');}, 200);
+        setTimeout(function() { $('.animate-last-row').addClass('animated fadeInUp');}, 400);
+      }, { offset: '50%' });
+
       $('#features').waypoint(function() {
         setTimeout(function() { $('.content_anim4').addClass('animated fadeInUp') }, 0);
         setTimeout(function() { $('.content_anim5').addClass('animated fadeInUp') }, 200);
